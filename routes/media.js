@@ -14,8 +14,8 @@ var Venue   = require('./../db/Venue');
 var User    = require('./../db/User');
 
 // Setting up AWS Credentials
-var AWS_ACCESS_KEY = config.aws.access;
-var AWS_SECRET_KEY = config.aws.secret;
+var AWS_ACCESS_KEY = config.aws.access || process.env.S3_ACCESS;
+var AWS_SECRET_KEY = config.aws.secret || process.env.S3_SECRET;
 var S3_BUCKET = 'persnickety/media';
 
 // Returns a list of media for a venue
