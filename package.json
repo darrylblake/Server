@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "async": "^1.4.0",
+    "aws-sdk": "^2.1.50",
     "body-parser": "^1.13.3",
     "express": "^4.13.3",
     "mime": "^1.3.4",
